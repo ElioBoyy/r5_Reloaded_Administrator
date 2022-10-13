@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "r5_Reloaded_Administrator/1.0.0": {
+        "runtime": {
+          "r5_Reloaded_Administrator.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "r5_Reloaded_Administrator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
