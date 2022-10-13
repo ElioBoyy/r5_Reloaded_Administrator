@@ -5,7 +5,6 @@ namespace r5_Reloaded_Administrator
     public class Selector
     {
         private string Path = $@"C:\Users\{Environment.UserName}\Documents";
-        WebClient client = new WebClient();
 
         public void Start()
         {
@@ -74,31 +73,7 @@ namespace r5_Reloaded_Administrator
 
         private async void DownloadR5()
         {
-            string prompt = "Download r5_Reloaded?\n";
-            string[] options = { "Yes", "No" };
-            Menu mainMenu = new Menu(options, prompt);
-            int selectedIndex = mainMenu.Run();
-
-            if (selectedIndex == 0)
-            {
-                //using (WebClient wc = new WebClient())
-                //{
-                //    wc.DownloadFileAsync(
-                //        new System.Uri("https://download.r5reloaded.com/r5reloaded.rar"),
-                //        $"{Path}/r5reloaded.rar"
-                //    );
-
-                //}
-
-                Console.WriteLine(sizeCalcul("https://download.r5reloaded.com/r5reloaded.rar") + " Mo");
-            }
-        }
-
-        private Int64 sizeCalcul(string path)
-        {
-            client.OpenRead(path);
-            Int64 bytes_total = Convert.ToInt64(client.ResponseHeaders["Content-Length"]) / 1000000;
-            return bytes_total;
+            DownloadR5
         }
 
         private void ExitSoft()
